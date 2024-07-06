@@ -73,3 +73,53 @@
     }
   }
 }
+
+@media (max-width: 860px) {
+  .connect-wallet {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px;
+
+    .connect {
+      &-item {
+        .border-gradient__content {
+          font-size: 20px;
+        }
+
+        img {
+          width: 40px;
+          height: auto;
+        }
+      }
+
+      &-title {
+        font-size: 30px;
+        margin-bottom: 0;
+      }
+
+      &-text {
+        font-size: 16px;
+      }
+
+      &-row {
+        margin-bottom: 0;
+      }
+
+      &-items {
+        gap: 5px 0;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 500px) {
+  .connect-wallet  {
+    .connect {
+      &-title {
+        font-size: 25px;
+        letter-spacing: 0.5px;
+      }
+    }
+  }
+}
