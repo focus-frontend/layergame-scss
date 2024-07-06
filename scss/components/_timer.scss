@@ -1,0 +1,15 @@
+.timer {
+  padding: 10px 83px;
+  border-radius: 25px;
+  background-color: #1b1a2b;
+  width: max-content;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+
+  &.timer--small {
+    padding: 10px 35px;
+  }
+}

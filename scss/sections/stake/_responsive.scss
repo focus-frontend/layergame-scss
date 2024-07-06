@@ -1,0 +1,165 @@
+@media (max-width: 1600px) {
+  .stake {
+    &-row {
+      grid-template-columns: 720px 1fr;
+      gap: 20px;
+    }
+
+    &-content {
+      .content {
+        &-header {
+          margin: 30px;
+        }
+
+        &-nfts {
+          margin-top: 0;
+          padding-left: 30px;
+        }
+
+        &-btns {
+          margin-bottom: 30px;
+        }
+      }
+
+      .loading {
+        margin: 0 32px;
+
+        width: calc(100% - 64px);
+      }
+    }
+
+    &-info {
+      .border-gradient__content {
+        padding: 30px;
+      }
+    }
+
+    &-reward .content-header {
+      margin: 0 0 20px;
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  .stake {
+    &-row {
+      grid-template-areas: 'content content' 'reward reward' 'info info';
+      gap: 50px;
+      grid-template-columns: 1fr;
+    }
+
+    &-content {
+      .loading {
+        margin-bottom: 30px;
+      }
+
+      .content {
+        &-title {
+          font-size: 16px;
+        }
+
+        &-header {
+          grid-template-columns: 1fr;
+          gap: 30px 0;
+
+          .btn {
+            justify-self: center;
+          }
+        }
+
+        &-available,
+        &-staked {
+          margin-bottom: 0;
+        }
+
+        &-btns {
+          grid-template-columns: 1fr;
+          justify-items: center;
+          gap: 30px 0;
+
+          .timer {
+            padding: 8px 90px;
+            font-size: 20px;
+          }
+
+          .btns-stake {
+            padding: 8px 90px;
+
+            &,
+            * {
+              font-size: 20px;
+            }
+          }
+        }
+
+        &-nfts {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    &-reward {
+      .content-header {
+        margin-bottom: 30px;
+      }
+
+      .reward-row {
+        gap: 30px;
+      }
+
+      .timer {
+        font-size: 20px;
+        padding: 8px 53px;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .stake {
+    margin-top: 100px;
+
+    &-title {
+      font-size: 50px;
+      margin-bottom: 80px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .stake {
+    margin-top: 80px;
+    padding-bottom: 50px;
+
+    &-title {
+      display: block;
+      margin-bottom: 50px;
+      font-size: 40px;
+    }
+
+    &:before {
+      background: unset;
+    }
+  }
+}
+
+@media (max-width: 666px) {
+  .stake {
+    &-reward {
+      .reward-row {
+        grid-template-columns: 1fr;
+        justify-items: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .stake {
+    margin-top: 80px;
+
+    &-title {
+      margin-bottom: 50px;
+    }
+  }
+}

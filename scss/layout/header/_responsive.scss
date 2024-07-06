@@ -1,0 +1,15 @@
+@media (max-width: 560px) {
+  .header {
+    padding: 20px 0;
+
+    &-launch,
+    &-menu {
+      display: none;
+    }
+
+    &-logo img {
+      width: 200px;
+      height: auto;
+    }
+  }
+}

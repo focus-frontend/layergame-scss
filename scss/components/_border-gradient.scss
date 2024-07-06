@@ -1,0 +1,25 @@
+.border-gradient {
+  background: linear-gradient(94deg, #20c7ed 0%, #d251fd 99.79%);
+  border-radius: 25px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.border-gradient .border-gradient__content {
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.border-gradient:before {
+  content: '';
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  border-radius: 25px;
+  position: absolute;
+  background-color: #12111c;
+}

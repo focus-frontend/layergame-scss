@@ -1,0 +1,75 @@
+.connect-wallet {
+  width: 750px;
+  padding: 50px 60px;
+
+  .border-gradient {
+    border-radius: 10px;
+
+    &:before {
+      background-color: #252534;
+      border-radius: 10px;
+    }
+  }
+
+  .connect {
+    &-row {
+      display: grid;
+      grid-template-columns: 1fr max-content;
+      gap: 0 20px;
+      margin-bottom: 9px;
+    }
+
+    &-title {
+      color: #fff;
+      font-size: 40px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+
+      span {
+        background: linear-gradient(94deg, #20c7ed 0%, #d251fd 79.2%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+    &-text {
+      color: #8c8b92;
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 50px;
+    }
+
+    &-items {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px 0;
+    }
+
+    &-item {
+      background: none;
+      cursor: pointer;
+
+      .border-gradient__content {
+        padding: 16px 28px;
+        height: max-content;
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        align-items: center;
+        gap: 0 20px;
+        color: #dedede;
+        font-size: 28px;
+        font-weight: 500;
+      }
+
+      &.connect-item--selected {
+        background: linear-gradient(94deg, #20c7ed 0%, #d251fd 99.79%);
+      }
+    }
+
+    &-close {
+      cursor: pointer;
+    }
+  }
+}

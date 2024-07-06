@@ -1,0 +1,190 @@
+.stake {
+  margin-top: 132px;
+  padding-bottom: 159px;
+  position: relative;
+
+  &:before {
+    content: '';
+    background-image: url('../img/planet.svg');
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 0;
+  }
+
+  &-title {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 100px;
+
+    color: #fff;
+    font-weight: 600;
+    font-size: 75px;
+    line-height: 100%;
+    letter-spacing: 2.25px;
+    text-transform: capitalize;
+
+    * {
+      font-family: 'Radio Canada';
+    }
+
+    .title-gradient {
+      background: linear-gradient(94deg, #20c7ed 0%, #d251fd 79.2%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: capitalize;
+    }
+  }
+
+  &-row {
+    display: grid;
+    grid-template-columns: 860px 600px;
+    grid-template-areas: 'content info' 'reward info';
+    gap: 50px;
+  }
+
+  &-content {
+    grid-area: content;
+
+    .loading {
+      margin: 0 50px;
+      width: calc(100% - 100px);
+    }
+
+    .content {
+      &-header {
+        display: grid;
+        grid-template-columns: 1fr max-content;
+        gap: 0 20px;
+        margin: 50px 50px 0;
+      }
+
+      &-title {
+        color: #8c8b92;
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      &-nfts {
+        padding-left: 50px;
+        margin: 50px 2px 20px;
+      }
+
+      &-available,
+      &-staked {
+        margin-bottom: 50px;
+      }
+
+      &-staked {
+        .content-header {
+          margin-top: 0;
+          margin-bottom: 20px;
+        }
+      }
+
+      &-btns {
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: max-content max-content;
+        justify-content: center;
+        gap: 0 30px;
+
+        .border-gradient {
+          width: max-content;
+        }
+
+        .btns-stake {
+          padding: 10px 94px;
+
+          &,
+          * {
+            cursor: pointer;
+          }
+        }
+
+        .btns-stake {
+          &,
+          * {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 500;
+          }
+        }
+      }
+
+      &-empty {
+        color: #8c8b92;
+        font-size: 24px;
+        font-weight: 500;
+        text-align: center;
+        margin: 145px 20px;
+      }
+    }
+  }
+
+  &-info {
+    grid-area: info;
+
+    .border-gradient__content {
+      padding: 50px 50px 64px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px 0;
+    }
+
+    .info {
+      &-title {
+        color: #fff;
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+
+      &-text {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &-reward {
+    grid-area: reward;
+
+    .border-gradient__content {
+      padding: 30px;
+    }
+
+    .reward {
+      &-title {
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        gap: 0 10px;
+        align-items: center;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 500;
+      }
+
+      &-row {
+        display: grid;
+        grid-template-columns: max-content max-content;
+        justify-content: space-between;
+      }
+    }
+
+    .content {
+      &-header {
+        margin: 0 0 24px;
+      }
+
+      &-title {
+        font-weight: 400;
+      }
+    }
+  }
+}

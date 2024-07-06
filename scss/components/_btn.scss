@@ -1,0 +1,33 @@
+.btn {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 10px 0;
+  cursor: pointer;
+  background-color: #1b1a2b;
+  border-radius: 50px;
+
+  &.btn--gradient {
+    background: linear-gradient(94deg, #20c7ed 0%, #d251fd 99.79%);
+  }
+
+  &.btn--small {
+    padding: 10px 30px;
+  }
+
+  &.btn--large {
+    padding: 10px 100px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .btn {
+    font-size: 16px;
+
+    &.btn--small {
+      padding: 5px 21px;;
+    }
+  }
+
+
+}
